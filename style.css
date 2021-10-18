@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    animation: bgcolor 20s linear infinite;
+}
+@keyframes bgcolor {
+    0% {
+        background: black;
+    }
+    20% {
+        background: black;
+    }
+    25% {
+        background: white;
+    }
+    45% {
+        background: white;
+    }
+    50% {
+        background: black;
+    }
+    70% {
+        background: black;
+    }
+    75% {
+        background: white;
+    }
+    95% {
+        background: white;
+    }
+    100% {
+        background: black;
+    }
+}
+#slider {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+#slider figure {
+    position: relative;
+    height: 100%;
+    width: 500%;  /* 500% for 5 images */
+    animation: slider 20s linear infinite;
+}
+#slider figure img {
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
